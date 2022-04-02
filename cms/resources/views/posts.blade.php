@@ -82,7 +82,9 @@
                 <!--投稿者名の表示-->
                 <div>{{$post->user->name}}</div>
                 <!--投稿のカテゴリを表示-->
-                <div>{{ \App\Enums\CategoryType::getDescription($post->category) }}</div>
+                
+                <div>{{ $post->category }}</div>
+                
                 <!--投稿のタイトルを表示-->
                 <div>{{ $post->post_title }}</div>
                 <!--投稿の本文を表示-->
